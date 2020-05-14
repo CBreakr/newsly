@@ -1,8 +1,11 @@
 import React from 'react'
 
 function ArticleCard(props){
+
+  const className = `card ${props.mode}`;
+
   return (
-      <div className="card light">
+      <div className={className}>
         <h4>{props.title}</h4>
         <div className="image-wrapper">
           <img className="image" src={props.urlToImage}/>
